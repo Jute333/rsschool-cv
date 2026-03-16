@@ -15,9 +15,10 @@
     * **CSS**
     * **Python**
 5. ## Code Examples:
-    ``` function calculateAverage(a, b) {
-            return (a + b) / 2;
-        } 
+    ``` 
+    function calculateAverage(a, b) {
+        return (a + b) / 2;
+    } 
     ```
 6. ## Experience:
     * [Adaptive Web Gallery](https://github.com/Jute333/gallery)
