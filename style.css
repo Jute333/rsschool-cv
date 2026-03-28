@@ -229,7 +229,7 @@ main .container {
     color: black;
 }
 
-/* CODE EXAMPLES */
+/* CODE EXAMPLES BLOCK*/
 
 .code-info_block {
     display: flex;
@@ -312,7 +312,7 @@ main .container {
     background-color: rgb(73, 73, 58);
 }
 
-/* EDUCATION INFO */
+/* EDUCATION BLOCK */
 
 .main-educ_info {
     display: flex;
@@ -327,4 +327,63 @@ main .container {
     font-size: 24px;
     color: black;
     font-weight: 500;
+}
+
+/* LANGUAGES BLOCK */
+
+.main-lang_info {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.lang-block {
+    display: flex;
+}
+
+.lang-info {
+    width: 75%;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+
+.section:last-child {
+    margin-bottom: 60px;
+}
+
+/* FOOTER BLOCK */
+
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.hub-logo {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.footer-info {
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+}
+
+.rs-link {
+    max-width: 9%;
+}
+
+.rs-logo {
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    .footer-info {
+        font-size: 20px;
+    }
 }
