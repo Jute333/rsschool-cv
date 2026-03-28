@@ -88,7 +88,7 @@ main .container {
     flex-wrap: wrap;
     background-color: white;
     border-radius: 14px;
-    box-shadow: 0px 0px 19px 8px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 18px 13px rgba(34, 60, 80, 0.2);
     margin-top: 20px;
     justify-content: center;
 }
@@ -182,6 +182,8 @@ main .container {
     align-items: center;
     text-align: center;
     width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .chapter-title::before,
@@ -308,4 +310,21 @@ main .container {
 .see-work_btn:active {
     transform: scale(0.95);
     background-color: rgb(73, 73, 58);
+}
+
+/* EDUCATION INFO */
+
+.main-educ_info {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.educ-info {
+    width: 75%;
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
 }
