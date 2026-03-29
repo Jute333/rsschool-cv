@@ -1,0 +1,386 @@
+@font-face {
+    font-family: "Arimo";
+    src: url("assets/fonts/static/Arimo-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Arimo";
+    src: url("assets/fonts/static/Arimo-Bold.ttf");
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: yellow;
+    font-family: "Arimo", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+}
+
+pre {
+    tab-size: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 1220px;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: all 0.3s ease;
+    gap: 1.5%;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    color: #000;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1)
+}
+
+.nav-link:hover {
+    font-size: 22px;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0px 0px 18px 13px rgba(34, 60, 80, 0.2);
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-subtitle_cont {
+    width: 90%;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.section-subtitle {
+    padding-left: 5%;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+/* MAIN INFO BLOCK */
+
+.main-info_block {
+    display: flex;
+    justify-content: center;
+}
+
+.main-info {
+    width: 75%;
+    font-size: 24px;
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+.main-info_link {
+    width: 75%;
+    font-size: 24px;
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+.main-info_link:hover {
+    color: #000;
+}
+
+.main-social_info-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.profile-pic_block {
+    padding-top: 40px;
+    width: 30%;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* CONTACT INFO BLOCK */
+
+.social-cont {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: start;
+}
+
+.social-logo {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.contact-info_list {
+    list-style-type: none;
+}
+
+.chapter-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.chapter-title::before,
+.chapter-title::after {
+    content: '';
+    flex-grow: 1;
+    background: #ccc;
+    height: 2px;
+    margin: 0 10px;
+}
+
+/* SKILLS BLOCK */
+
+.main-skill_info-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-item::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.skill-info {
+    width: 75%;
+    font-size: 24px;
+    color: black;
+}
+
+/* CODE EXAMPLES BLOCK*/
+
+.code-info_block {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.func {
+    color: plum;
+}
+
+.func-name {
+    color: rgb(160, 199, 221);
+}
+
+@media (max-width: 768px) {
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* MY WORKS BLOCK */
+
+.main-works_info {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.work-block {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+.main-work_info {
+    width: 50%;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+
+.see-work_txt {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.see-work_btn {
+    max-width: 22%;
+    background-color: rgb(245, 245, 200);
+    transition: all 0.3s ease;
+    border: 1.5px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 50px;
+    border-radius: 40px;
+}
+
+.see-work_btn:hover {
+    transform: scale(1.05);
+    background-color: yellow;
+}
+
+.see-work_btn:active {
+    transform: scale(0.95);
+    background-color: rgb(73, 73, 58);
+}
+
+/* EDUCATION BLOCK */
+
+.main-educ_info {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.educ-info {
+    width: 75%;
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+}
+
+/* LANGUAGES BLOCK */
+
+.main-lang_info {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.lang-block {
+    display: flex;
+}
+
+.lang-info {
+    width: 75%;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+
+.section:last-child {
+    margin-bottom: 60px;
+}
+
+/* FOOTER BLOCK */
+
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.hub-logo {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.footer-info {
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+}
+
+.rs-link {
+    max-width: 9%;
+}
+
+.rs-logo {
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    .footer-info {
+        font-size: 20px;
+    }
+}
