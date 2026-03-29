@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Hello!</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cv</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#code-examples" class="nav-link">Code Example</a></li>
+                        <li class="nav-item"><a href="#experience" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="section" id="summary">
+                    <div class="profile-pic_block">
+                        <img src="assets/images/catPic.jpg" alt="avatar" class="profile-pic">
+                    </div>
+                    <h1>Hi, I'm Anton</h1>
+                    <h2>Front-End Developer</h2>
+                    <div class="section-subtitle_cont">
+                        <h2 class="section-subtitle">ABOUT ME:</h2>
+                    </div>
+                    <div class="main-info_block">
+                        <p class="main-info">I'm 15 years old student of 9th grade. I love programming and I really want to develop in this area, soo I decided try rs school. Here are some of my strengths:
+                            strong confidence that I can do everything if I really wish it;
+                            quick learning;
+                            I try to look for the positive in everything.
+                        </p>
+                    </div>
+                </section>
+                <section class="section" id="contacts">
+                    <div class="section-subtitle_cont">
+                        <h2 class="section-subtitle">CONTACT INFO:</h2>
+                    </div>
+                    <div class="main-social_info-block">
+                        <ul class="contact-info_list">
+                            <li class="contact-info_item">
+                                <div class="social-cont">
+                                    <img src="assets/logos/icons8-телеграм-50.png" alt="telegram" class="social-logo">
+                                    <p class="main-info">aajutr</p>
+                                </div>
+                            </li>
+                            <li class="contact-info_item">
+                                <div class="social-cont">
+                                    <img src="assets/logos/gmail-logo.png" alt="mail" class="social-logo">
+                                    <p class="main-info">misteranton945@gmail.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="chapter-title"><h2>My Experience</h2></div>
+                <section class="section" id="skills">
+                    <div class="section-subtitle_cont">
+                        <h2 class="section-subtitle">SKILLS:</h2>
+                    </div>
+                    <div class="main-skill_info-block">
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <p class="skill-info">JS</p>
+                            </li>
+                            <li class="skill-item">
+                                <p class="skill-info">Lua</p>
+                            </li>
+                            <li class="skill-item">
+                                <p class="skill-info">HTML</p>
+                            </li>
+                            <li class="skill-item">
+                                <p class="skill-info">CSS</p>
+                            </li>
+                            <li class="skill-item">
+                                <p class="skill-info">Python</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section" id="code-examples">
+                    <div class="section-subtitle_cont">
+                        <h2 class="section-subtitle">CODE EXAMPLE:</h2>
+                    </div>
+                    <div class="code-info_block">
+                        <pre class="code-pre">
+                            <code class="code-block">
+<span class="func">function</span> <span class="func-name">calculateAverage(a, b)</span> <span>{</span>
+    <span class="func">return</span> <span>(a+b) / 2</span> <span>;</span>
+<span>}</span>
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section class="section" id="experience">
+                    <div class="section-subtitle_cont">
+                        <h2 class="section-subtitle">MY WORKS:</h2>
+                    </div>
+                    <div class="main-works_info">
+                        <div class="work-block">
+                            <p class="main-work_info">Adaptive Web Gallery</p>
+                            <a href="https://github.com/Jute333/gallery" class="see-work_btn">
+                                <span class="see-work_txt">See Project</span>
+                            </a>
+                            <p class="main-work_info">This CV</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="chapter-title"><h2>Education Info</h2></div>
+                <section class="section" id="education">
+                    <div class="section-subtitle_cont">
+                        <h2 class="section-subtitle">EDUCATION:</h2>
+                    </div>
+                    <div class="main-educ_info">
+                        <p class="educ-info">9th Grade Of School</p>
+                        <p class="educ-info">RS Preschool</p>
+                    </div>
+                </section>
+                <section class="section" id="languages">
+                    <div class="section-subtitle_cont">
+                        <h2 class="section-subtitle">LANGUAGES:</h2>
+                    </div>
+                    <div class="main-lang_info">
+                        <div class="lang-block">
+                            <p class="lang-info">Russian</p>
+                            <p class="lang-info">Native Speaker</p>
+                        </div>
+                        <div class="lang-block">
+                            <p class="lang-info">English</p>
+                            <p class="lang-info">B2</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-block">
+                    <p class="footer-info">2021</p>
+                    <a href="https://github.com/Jute333" class="git-link">
+                        <p class="footer-info">GitHub</p>
+                    </a>
+                    <a href="https://rs.school/courses/javascript-preschool-ru" class="rs-link">
+                        <img src="assets/logos/rs-school-logo.svg" alt="rsschool-logo" class="rs-logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
