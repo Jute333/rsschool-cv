@@ -281,10 +281,6 @@ main .container {
     font-weight: 600;
 }
 
-.work-link {
-    max-width: 22%;
-}
-
 .see-work_txt {
     font-size: 20px;
     color: black;
@@ -293,6 +289,7 @@ main .container {
 }
 
 .see-work_btn {
+    max-width: 22%;
     background-color: rgb(245, 245, 200);
     transition: all 0.3s ease;
     border: 1.5px solid black;
